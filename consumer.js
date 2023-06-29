@@ -21,7 +21,7 @@ async function connect() {
       const messageContent = msn.content.toString();
      // console.log(messageContent);
       try {
-        const response = await fetch('http://localhost:4000/products/', {
+        const response = await fetch('http://3.220.243.236:4000/products/', {
           method: 'POST',
           body: messageContent,
           headers: { 'Content-Type': 'application/json', "Accept": "application/json"}
